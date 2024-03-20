@@ -1,5 +1,8 @@
-const API_KEY = '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';
+const API_KEY = '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';
 const API_URL = 'https://api.openai.com/v1/chat/completions';
+
+const ASSISTANT_ID = 'asst_cmmZ9MUSYdQNE79VmpNjFVo5';
+let thread_id = '';
 
 const sendButton = document.getElementById('send-button');
 const userInput = document.getElementById('user-input');
@@ -7,6 +10,7 @@ const chatWindow = document.getElementById('chat-window');
 const userMessage = document.createElement('div');
 
 let controller = null;
+
 
 
 const generate = async () => {
