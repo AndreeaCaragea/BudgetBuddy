@@ -12,7 +12,6 @@ const userMessage = document.createElement('div');
 let controller = null;
 
 
-
 const generate = async () => {
     if (userInput.value.trim() == "") {
         alert("Please enter a question.");
